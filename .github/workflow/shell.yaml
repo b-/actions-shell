@@ -1,0 +1,9 @@
+name: simple github actions shell
+on:
+  workflow_dispatch
+  # running this on a cron or publicly is probably against some kinda tos, don't do that
+  jobs:
+    shell:
+      runs-on: ubuntu-latest
+      - name: tmate session
+      uses: mxschmitt/action-tmate@v3
